@@ -1,1 +1,201 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языки разметки: XML, HTML, YAML</title>
+   <link href="style.css" rel="stylesheet">
+</head>
+
+  <body>
+    <header>
+        <h1>Языки разметки данных</h1>
+        <p>Изучите основные языки разметки: XML, HTML, YAML и их применение в современной веб-разработке</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#xml">XML</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#yaml">YAML</a></li>
+            <li><a href="#yml">YML</a></li>
+            <li><a href="#comparison">Сравнение</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section class="intro">
+            <h2>Что такое языки разметки?</h2>
+            <p>Языки разметки используются для аннотирования текста, добавления структуры и семантики к данным. Они играют ключевую роль в веб-разработке, конфигурации приложений и обмене данными между системами.</p>
+        </section>
+        
+        <section class="languages-grid">
+            <div class="language-card" id="xml">
+                <div class="card-header xml-header">
+                    <h3>XML</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>XML (eXtensible Markup Language)</strong> - это язык разметки, который определяет набор правил для кодирования документов в формате, удобном для чтения как человеком, так и машиной.</p>
+                    <p><strong>Основные характеристики:</strong></p>
+                    <ul>
+                        <li>Расширяемость - можно создавать собственные теги</li>
+                        <li>Самодокументируемость</li>
+                        <li>Используется для обмена данными между системами</li>
+                        <li>Поддерживает валидацию через DTD или XML Schema</li>
+                    </ul>
+                    <p><strong>Пример использования:</strong></p>
+                    <div class="code-example">
+                        &lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>
+                        &lt;book&gt;<br>
+                        &nbsp;&nbsp;&lt;title&gt;Война и мир&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;author&gt;Лев Толстой&lt;/author&gt;<br>
+                        &nbsp;&nbsp;&lt;year&gt;1869&lt;/year&gt;<br>
+                        &lt;/book&gt;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="language-card" id="html">
+                <div class="card-header html-header">
+                    <h3>HTML</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>HTML (HyperText Markup Language)</strong> - стандартный язык разметки для создания веб-страниц и веб-приложений. Вместе с CSS и JavaScript образует основу современных веб-технологий.</p>
+                    <p><strong>Основные характеристики:</strong></p>
+                    <ul>
+                        <li>Предопределенный набор тегов для структурирования контента</li>
+                        <li>Поддержка мультимедийного контента</li>
+                        <li>Возможность создания интерактивных элементов через формы</li>
+                        <li>Семантическая разметка для улучшения доступности и SEO</li>
+                    </ul>
+                    <p><strong>Пример использования:</strong></p>
+                    <div class="code-example">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                        &nbsp;&nbsp;&lt;title&gt;Мой сайт&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;Заголовок страницы&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Это абзац текста.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="language-card" id="yaml">
+                <div class="card-header yaml-header">
+                    <h3>YAML</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>YAML (YAML Ain't Markup Language)</strong> - это человеко-читаемый язык сериализации данных, часто используемый для конфигурационных файлов и обмена данными между языками программирования.</p>
+                    <p><strong>Основные характеристики:</strong></p>
+                    <ul>
+                        <li>Минималистичный синтаксис</li>
+                        <li>Использует отступы для структуры (без скобок)</li>
+                        <li>Поддержка сложных структур данных</li>
+                        <li>Часто используется в DevOps и контейнеризации</li>
+                    </ul>
+                    <p><strong>Пример использования:</strong></p>
+                    <div class="code-example">
+                        # Конфигурация приложения<br>
+                        app:<br>
+                        &nbsp;&nbsp;name: "Мое приложение"<br>
+                        &nbsp;&nbsp;version: 1.0.0<br>
+                        &nbsp;&nbsp;database:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;host: "localhost"<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;port: 5432<br>
+                        &nbsp;&nbsp;features:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- "auth"<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;- "notifications"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="language-card" id="yml">
+                <div class="card-header yml-header">
+                    <h3>YML</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>YML</strong> - это фактически то же самое, что и YAML. Расширение .yml часто используется вместо .yaml для файлов YAML, особенно в системах, где длина расширения файла ограничена тремя символами.</p>
+                    <p><strong>Основные характеристики:</strong></p>
+                    <ul>
+                        <li>Полная совместимость с YAML</li>
+                        <li>Идентичный синтаксис и возможности</li>
+                        <li>Часто используется в CI/CD конфигурациях (например, GitHub Actions)</li>
+                        <li>Популярен для конфигурации Docker Compose</li>
+                    </ul>
+                    <p><strong>Пример использования (аналогичен YAML):</strong></p>
+                    <div class="code-example">
+                        # .github/workflows/deploy.yml<br>
+                        name: Deploy to production<br>
+                        on:<br>
+                        &nbsp;&nbsp;push:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;branches: [ main ]<br>
+                        jobs:<br>
+                        &nbsp;&nbsp;deploy:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;runs-on: ubuntu-latest<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;steps:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- name: Checkout code<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uses: actions/checkout@v2
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="comparison" id="comparison">
+            <h2>Сравнение языков разметки</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Характеристика</th>
+                        <th>XML</th>
+                        <th>HTML</th>
+                        <th>YAML</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Основное назначение</td>
+                        <td>Структурирование и обмен данными</td>
+                        <td>Создание веб-страниц</td>
+                        <td>Конфигурация и сериализация данных</td>
+                    </tr>
+                    <tr>
+                        <td>Читаемость</td>
+                        <td>Умеренная</td>
+                        <td>Хорошая</td>
+                        <td>Очень высокая</td>
+                    </tr>
+                    <tr>
+                        <td>Расширяемость</td>
+                        <td>Высокая (пользовательские теги)</td>
+                        <td>Ограниченная (фиксированные теги)</td>
+                        <td>Высокая (пользовательские структуры)</td>
+                    </tr>
+                    <tr>
+                        <td>Синтаксис</td>
+                        <td>Теги с угловыми скобками</td>
+                        <td>Теги с угловыми скобками</td>
+                        <td>Отступы и двоеточия</td>
+                    </tr>
+                    <tr>
+                        <td>Использование</td>
+                        <td>Веб-сервисы, конфиги</td>
+                        <td>Веб-разработка</td>
+                        <td>Конфиги, DevOps, данные</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 Презентация языков разметки | Изучаем XML, HTML, YAML и YML</p>
+    </footer>
+</body>
+  
+</html>
 
