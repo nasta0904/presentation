@@ -67,6 +67,11 @@
             margin-bottom: 2rem;
             opacity: 0.9;
         }
+
+      .name {
+        word-spacing: 10px;
+      }
+
         
         .cta-button {
             display: inline-block;
